@@ -1,0 +1,14 @@
+ul {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+li {
+  height: 25px;
+}
+
+body {
+    position: relative;
+    left: 200px;
+}

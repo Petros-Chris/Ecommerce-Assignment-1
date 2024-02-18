@@ -28,6 +28,10 @@ class App{
 
         //defined a few routes "url"=>"controller,method"
         $routes = ['Person/register'=>'Person,register',
+                    'Main/index'=>'Person,blow_up',
+                    'Main/about_us'=>'Person,blow_up2',
+                    'Contact/index'=>'Person,blow_up3',
+                    'Contact/read'=>'Person,blow_up4',
                     'Person/complete_registration'=>'Person,complete_registration',
                     'Person/'=>'Person,list',
                     'Person/delete' => 'Person,delete',
