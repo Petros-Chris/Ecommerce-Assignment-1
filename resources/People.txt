@@ -1,0 +1,2 @@
+{"first_name":"asd","last_name":"asd","email":"fadsf@fsdfa","weekly_flyer":false,"mailing_list":true}
+{"first_name":"oa","last_name":"asd","email":"aseasf2@sd.com","weekly_flyer":true,"mailing_list":false}
