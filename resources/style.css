@@ -1,3 +1,4 @@
+
 ul {
   position: fixed;
   top: 0;
@@ -12,3 +13,16 @@ body {
     position: relative;
     left: 200px;
 }
+
+.aboutUsPic {
+  width: 200px;
+  height: auto;
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* TIP: do crtl F5 if things arent working even though they should, seems to be a cache issue with the docker server thing*/

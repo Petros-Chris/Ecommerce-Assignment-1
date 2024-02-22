@@ -5,8 +5,26 @@
 </head>
 
 <body>
-<h1>3</h1>
+<h1>Contact us</h1>
+<p>Wanna reach us? Write your email information and message in the following form and then submit.</p>
 
+<form>
+
+<label for id="emailInput">Email: </label>
+<input type = "email" id = "emailInput">
+
+<br>
+
+<label for id = "messageInput">Message: </label>
+<input type = "textarea" id = "messageInput">
+
+<br>
+
+<button>Send!</button>
+
+
+
+</form>
 <nav>
 <ul>
     <li><a href="../Main/index">Landing page</a></li>
