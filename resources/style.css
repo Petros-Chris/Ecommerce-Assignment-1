@@ -1,7 +1,7 @@
 
 ul {
   position: fixed;
-  top: 0;
+  top: 10;
   left: 0;
 }
 
@@ -11,7 +11,7 @@ li {
 
 body {
     position: relative;
-    left: 200px;
+    left: 250px;
 }
 
 .aboutUsPic {
@@ -24,5 +24,31 @@ body {
   align-items: center;
   margin-bottom: 20px;
 }
+
+label {
+  width: 150px;
+  display: inline-flex;
+}
+
+
+input {
+  height: 30px;
+}
+
+.inputFields {
+  width: 70%;
+  margin-bottom: 10px;
+}
+
+#button {
+  position: relative;
+  left: 154px;
+}
+
+#test {
+  display: flex;
+  align-items: center;
+}
+
 
 /* TIP: do crtl F5 if things arent working even though they should, seems to be a cache issue with the docker server thing*/

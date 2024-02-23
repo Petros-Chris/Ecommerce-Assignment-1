@@ -6,7 +6,7 @@
 </head>
 <body>
 	<div id='container'>
-		<form method='post' action='/Person/complete_registration'>
+	method='post' action='/Person/complete_registration'>
 			<div class="form-group">
 				<label>First name:<input type="text" class="form-control" name="first_name" placeholder="Jon" /></label>
 			</div>

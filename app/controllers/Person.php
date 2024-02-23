@@ -14,22 +14,6 @@ class Person extends \app\core\Controller{
 		//showing the register view
 		$this->view('Person/register');
 	}
-
-	function blow_up() {
-		$this->view('Main/index');
-	}
-
-	function blow_up2() {
-		$this->view('Main/about_us');
-	}
-
-	function blow_up3() {
-		$this->view('Contact/index');
-	}
-
-	function blow_up4() {
-		$this->view('Contact/read');
-	}
  
 	function complete_registration(){
 		print_r($_POST);
