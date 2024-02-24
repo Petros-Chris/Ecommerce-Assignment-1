@@ -2,7 +2,6 @@
 require('app/core/App.php');
 require('app/core/Controller.php');
 require('app/core/autoload.php');
-require_once('app/controllers/Count.php');
 //future inclusion for Model
 
 //Hint: placing JavaScript/CSS code in the header or footer sub views will make it available in all pages.
@@ -25,21 +24,5 @@ require_once('app/controllers/Count.php');
     <li><a href="../Contact/read">See the messages we get</a></li>
 </ul>
 </nav>
-
-<div id = "demo"></div>
-
-<script>
-    loadDoc();
-function loadDoc() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-     document.getElementById("demo").innerHTML = this.responseText;
-    }
-  };
-  xhttp.open("GET", "../resources/counter.txt", true);
-  xhttp.send();
-}
-    </script>
 
 </html>
