@@ -12,13 +12,13 @@
 
 
 <label for="emailInput">Email: </label>
-<input class="inputFields" type="email" id="emailInput">
+<input class="inputFields" type="email" id="emailInput" name="email">
 
 <br>
 
 <div id="test">
 <label for="messageInput" style="width: 154px;" >Message:</label>
-<textarea class="inputFields" id="messageInput">cvxcvxc</textarea>
+<textarea class="inputFields" id="messageInput" name="message">cvxcvxc</textarea>
 </div>
 
 <input class="inputFields" id="button" type="submit" value='Send!'>
