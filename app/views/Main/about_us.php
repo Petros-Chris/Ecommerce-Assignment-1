@@ -10,9 +10,9 @@
 </div>
 
 <div class = "imageContainer">
-<img class = "aboutUsPic" src = "../resources/fishThing.webp">
+<img class = "aboutUsPic" src = "../resources/tea.jpg">
 <!-- Rowau add like a pic here of maybe your tea 😝 -->
-<p>Rowau keeps Chris in check.</p>
+<p>Rotaru likes his tea.</p>
 </div>
 
 </body>
