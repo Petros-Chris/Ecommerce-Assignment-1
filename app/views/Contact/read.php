@@ -5,3 +5,7 @@
 
 </body>
 </html>
+
+<?php
+    require('app/controllers/Count.php');
+?>

@@ -18,7 +18,6 @@ class Counter {
         }
         $object = json_decode($count);  //3. Decode the JSON in $count and copy the resulting object’s count property to this object’s count property.
         $this->count = $object->count;
-        echo("hello");
     }
 
     public function increment() {

@@ -50,5 +50,9 @@ input {
   align-items: center;
 }
 
+#counterDiv {
+  text-align: right;
+  width: 80%;
+}
 
 /* TIP: do crtl F5 if things arent working even though they should, seems to be a cache issue with the docker server thing*/

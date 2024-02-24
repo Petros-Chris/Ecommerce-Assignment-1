@@ -1,4 +1,6 @@
-<?php
+<html>
+    <div id="counterDiv">
+    <?php
 require('app/models/Counter.php');
 
 Class CounterController {
@@ -9,8 +11,9 @@ Class CounterController {
         $counter -> increment();
 
         $counter -> write();
-
-        echo($counter -> __toString() );
+        
+        echo("{$counter -> count} page vists");
+        
     }
 
 }
@@ -18,3 +21,6 @@ Class CounterController {
 $CC = new CounterController();
 
 $CC -> index();
+?>
+</div>
+</html>
