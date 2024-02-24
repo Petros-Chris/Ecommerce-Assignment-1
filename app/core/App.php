@@ -28,10 +28,10 @@ class App{
 
         //defined a few routes "url"=>"controller,method"
         $routes = ['Person/register'=>'Person,register',
-                    'Main/index'=>'Contact,blow_up',
-                    'Main/about_us'=>'Contact,blow_up2',
-                    'Contact/index'=>'Contact,blow_up3',
-                    'Contact/read'=>'Contact,blow_up4',
+                    'Main/index'=>'Contact,urlLink',
+                    'Main/about_us'=>'Contact,urlLink',
+                    'Contact/index'=>'Contact,urlLink',
+                    'Contact/read'=>'Contact,urlLink',
                     'Person/complete_registration'=>'Person,complete_registration',
                     'Person/'=>'Person,list',
                     'Person/delete' => 'Person,delete',
@@ -45,7 +45,7 @@ class App{
                 [$controller,$method]=explode(',', $controllerMethod);
                 $controller = '\\app\\controllers\\'.$controller;
                 $controller = new $controller();
-                $controller->$method();
+                $controller->$method($routeUrl);
                 //make sure that we don't run a second route
                 break;
             }

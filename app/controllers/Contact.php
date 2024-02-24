@@ -5,21 +5,9 @@ namespace app\controllers;
 class Contact extends \app\core\Controller {
 
     //Need to make this one function
-function blow_up() {
-    $this->view('Main/index');
-}
-
-function blow_up2() {
-    $this->view('Main/about_us');
-}
-
-function blow_up3() {
-    $this->view('Contact/index');
-}
-
-function blow_up4() {
-    $this->view('Contact/read');
-}
+    public function urlLink($link) {
+        $this->view($link);
+    }
 
 }
 //it says Contact Controller so this means that
