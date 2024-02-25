@@ -7,18 +7,16 @@ class Message {
     public $email;
     public $ip;
 
-    
-
-    
-   
-
-    public function read() {
-        //The read method opens the /resources/messages.txt file
-        //with the file() function and returns the result.
-        $filename = 'resources/human.txt';
-        $fileContent = file($filename);
-        return $fileContent;
+    public function read(){
+		$filename = 'resources/human.txt';
+    $fileContent = file($filename);
+    $decodedContent = [];
+    foreach ($fileContent as $jsonString) {
+        $decodedContent[] = json_decode($jsonString, true); 
     }
+
+    return $decodedContent;
+	}
  
     public function write($info) {
        
@@ -30,4 +28,6 @@ class Message {
         flock($file_handle, LOCK_UN);                   //to not have it locked permately
         fclose($file_handle);                           //5. Close the file handler (use fclose)
     }
+
+    
 }
