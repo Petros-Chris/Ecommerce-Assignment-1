@@ -4,7 +4,7 @@
 <h1>Contact us</h1>
 <p>Wanna reach us? Write your email information and message in the following form and then submit.</p>
 
-<form method='post' action='../Contact/read'>
+<form method='post' action='../controllers/Contact'>
 
 
 <label for="emailInput">Email: </label>
@@ -25,5 +25,5 @@
 </html>
 
 <?php
-    require('app/controllers/Count.php');
+    require_once('app/controllers/Count.php');
 ?>

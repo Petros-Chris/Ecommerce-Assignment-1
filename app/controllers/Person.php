@@ -14,7 +14,7 @@ class Person extends \app\core\Controller{
 		//showing the register view
 		$this->view('Person/register');
 	}
- 
+
 	function complete_registration(){
 		print_r($_POST);
 

@@ -3,7 +3,7 @@
 
 class read{
 public function insert($formData){
-    $filename = 'resources/human.txt';
+    $filename = '../resources/human.txt';
     //open a file for writing (append)
     $file_handle = fopen($filename, 'a'); //a is for append, w for writing from the start
     //obtain exclusive access to the file to avoid data corruption
