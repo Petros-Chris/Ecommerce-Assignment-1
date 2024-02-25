@@ -1,10 +1,10 @@
 <?php
-require('app/models/Message.php');
-    
+    require('app/models/Message.php');
 
-$message = new \app\models\Message();
-$messageContent = $message->read();
+    $message = new \app\models\Message();
+    $messageContent = $message->read();
 ?>
+
 <html>
-<h1>yum</h1>
+    <h1>yum</h1>
 </html>

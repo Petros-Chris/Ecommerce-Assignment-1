@@ -1,5 +1,4 @@
 <?php
-
 class Counter {
     public $count;
 
@@ -42,5 +41,4 @@ class Counter {
         $jsonValue = json_encode($this);
         return $jsonValue;
     }
-
 }

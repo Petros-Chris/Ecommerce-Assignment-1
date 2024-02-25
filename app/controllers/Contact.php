@@ -18,12 +18,6 @@ class Contact {
         // Redirect to the read page after processing
         header('Location: /Contact/read');
         exit; 
-
-        
-
-        
-
-
     }
 
     function info(){

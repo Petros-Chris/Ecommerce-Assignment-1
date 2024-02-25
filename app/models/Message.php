@@ -1,27 +1,18 @@
 <?php
 namespace app\models;
 
-
 class Message {
     public $name;
     public $email;
     public $ip;
 
-    
-
-    
-   
-
     public function read() {
-        //The read method opens the /resources/messages.txt file
-        //with the file() function and returns the result.
         $filename = 'resources/human.txt';
         $fileContent = file($filename);
         return $fileContent;
     }
  
     public function write($info) {
-       
         $filename = '../../resources/human.txt';
         $message = json_encode($info);                  //1. json_encode this object into $message;  
         $file_handle = fopen($filename, 'a');           //2. Open the /resources/messages.txt file for appending (use fopen);
