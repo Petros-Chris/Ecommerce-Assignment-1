@@ -1,3 +1,7 @@
+<html>
+    <h1>Contact us - messages sent</h1>
+</html>
+
 <?php
 require('app/models/Message.php');
 
@@ -13,4 +17,6 @@ foreach ($messageContent as $human) {
         echo ($messageText) . "</p>";
     }
 }
+
+require_once('app/controllers/Count.php');
 ?>

@@ -30,9 +30,7 @@ class Contact {
            ];
 
         return $formdata;
-
     }
-    
 }
 
 $con = new Contact();
