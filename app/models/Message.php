@@ -7,13 +7,9 @@ class Message {
     public $email;
     public $ip;
 
-    //$email = $_POST["email"];
-    //public $message = $_POST['message'];
-   
-    //public $formdata = [
-    //   'email' => $email,
-    //   'message' => $message
-    //   ];
+    
+
+    
    
 
     public function read() {
@@ -24,9 +20,10 @@ class Message {
         return $fileContent;
     }
  
-    public function write() {
-        $filename = 'resources/human.txt';
-        $message = json_encode($this);                  //1. json_encode this object into $message;  
+    public function write($info) {
+       
+        $filename = '../../resources/human.txt';
+        $message = json_encode($info);                  //1. json_encode this object into $message;  
         $file_handle = fopen($filename, 'a');           //2. Open the /resources/messages.txt file for appending (use fopen);
         flock($file_handle, LOCK_EX);                   //3. Lock the file for writing (use flock);
         fwrite($file_handle, "$message \n");            //4. write contents of $message and concatenate with a \n (use fwrite).
