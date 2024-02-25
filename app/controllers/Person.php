@@ -15,6 +15,10 @@ class Person extends \app\core\Controller{
 		$this->view('Person/register');
 	}
 
+	public function urlLink($link) {
+        $this->view($link);
+    }
+
 	function complete_registration(){
 		print_r($_POST);
 

@@ -1,9 +1,8 @@
 <?php
-require_once('app/core/App.php');
-require_once('app/core/Controller.php');
-require_once('app/core/autoload.php');
+require('app/core/App.php');
+require('app/core/Controller.php');
+require('app/core/autoload.php');
 //future inclusion for Model
-
 //Hint: placing JavaScript/CSS code in the header or footer sub views will make it available in all pages.
 ?>
 

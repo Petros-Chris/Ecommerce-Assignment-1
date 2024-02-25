@@ -1,10 +1,11 @@
-<html>
 
+
+<html>
 <body>
 <h1>Contact us</h1>
 <p>Wanna reach us? Write your email information and message in the following form and then submit.</p>
 
-<form method='post' action='../controllers/Contact'>
+<form method='post' action="../app/controllers/Contact.php">
 
 
 <label for="emailInput">Email: </label>
