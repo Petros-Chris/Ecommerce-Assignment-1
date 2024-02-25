@@ -32,6 +32,7 @@ class App{
                     'Main/about_us'=>'Person,urlLink',
                     'Contact/index'=>'Person,urlLink',
                     'Contact/read'=>'Person,urlLink',
+                    'Count/index'=>'Person,urlLink',
                     'Person/complete_registration'=>'Person,complete_registration',
                     'Person/'=>'Person,list',
                     'Person/delete' => 'Person,delete',

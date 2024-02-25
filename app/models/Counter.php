@@ -20,28 +20,26 @@ class Counter {
         $this->count = $object->count;
     }
 
+    //The increment method adds 1 to this object’s count property.
     public function increment() {
-        //The increment method adds 1 to this object’s count property.
         $this -> count++;
-        
     }
 
     public function write() {
         $filename = "resources/counter.txt";
-        $file_contents = file($filename);               //TODO: to read all of the current contents in the file 
+        $file_contents = file($filename);               //to read all of the current contents in the file 
 
         $count = json_encode($this);                    //1. json_encode this object into $count;
         $file_handle = fopen($filename, 'w');           //2. Open the counter.txt file for writing (use fopen);
         flock($file_handle, LOCK_EX);                   //3. Lock the file for writing (use flock);
-        fwrite($file_handle, $count);   //4. Overwrite the file contents with $count (use fwrite).
+        fwrite($file_handle, $count);                   //4. Overwrite the file contents with $count (use fwrite).
         flock($file_handle, LOCK_UN);                   //to not have it locked permately
         fclose($file_handle);                           //5. Close the file (use fclose)
     }
 
+    //The __toString method returns the json-encoded value of this object.
     public function __toString() {
-        //The __toString method returns the json-encoded value of this object.
         $jsonValue = json_encode($this);
-
         return $jsonValue;
     }
 
