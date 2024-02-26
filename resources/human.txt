@@ -2,4 +2,3 @@
 {"email":"gewagw@gmail.com","message":"cvxcvxc","ip":"172.17.0.1"} 
 {"email":"dwad@gmail.com","message":"cvxcvxc","ip":"172.17.0.1"} 
 {"email":"asd@asd.com","message":"asd","ip":"172.17.0.1"} 
-{"email":"dasdas@ads.com","message":"asd","ip":"172.17.0.1"} 
