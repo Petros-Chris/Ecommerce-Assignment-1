@@ -51,7 +51,5 @@ class App{
                 break;
             }
         }
-
-
     }
 }

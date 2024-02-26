@@ -3,20 +3,20 @@
 </html>
 
 <?php
-require('app/models/Message.php');
+    require('app/models/Message.php');
 
-$message = new \app\models\Message();
-$messageContent = $message->read();
+    $message = new \app\models\Message();
+    $messageContent = $message->read();
 
-foreach ($messageContent as $human) {
-    if (is_array($human)) {
-        $email = isset($human['email']) ? $human['email'] : 'No email';
-        $messageText = isset($human['message']) ? $human['message'] : 'No message';
+    foreach ($messageContent as $human) {
+        if (is_array($human)) {
+            
+            $email = $human['email'];
+            $messageText = $human['message'];
 
-        echo "<p><strong>" . ($email) . "</strong><br />";
-        echo ($messageText) . "</p>";
+            echo "<p><strong>" . ($email) . "</strong><br />";
+            echo ($messageText) . "</p>";
+        }
     }
-}
-
-require_once('app/controllers/Count.php');
+    require_once('app/controllers/Count.php');
 ?>

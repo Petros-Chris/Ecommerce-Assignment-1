@@ -16,22 +16,21 @@
     </body>
 
     <script>
-
         function testForm() {
-        var email = document.getElementById("emailInput").value;
-        var message = document.getElementById("messageInput").value;
+            var email = document.getElementById("emailInput").value;
+            var message = document.getElementById("messageInput").value;
 
-        if(email == "") {
-            alert("Email can not be empty");
-            return false;
-        }
+            if(email == "") {
+                alert("Email can not be empty");
+                return false;
+            }
 
-        if(message == "") {
-            alert("Atleast type something in message");
-            return false;
-        }
-        return true;
-    }
+            if(message == "") {
+                alert("Atleast type something in message");
+                return false;
+            }
+            return true;
+        }   
     </script>
 </html>
 

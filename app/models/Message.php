@@ -6,15 +6,15 @@ class Message {
     public $email;
     public $ip;
 
-    public function read(){
+    public function read() {
 		$filename = 'resources/human.txt';
-    $fileContent = file($filename);
-    $decodedContent = [];
-    foreach ($fileContent as $jsonString) {
-        $decodedContent[] = json_decode($jsonString, true); 
-    }
+        $fileContent = file($filename);
+        $decodedContent = [];
 
-    return $decodedContent;
+        foreach ($fileContent as $jsonString) {
+            $decodedContent[] = json_decode($jsonString, true); 
+        }
+        return $decodedContent;
 	}
  
     public function write($info) {
@@ -26,6 +26,4 @@ class Message {
         flock($file_handle, LOCK_UN);                   //to not have it locked permately
         fclose($file_handle);                           //5. Close the file handler (use fclose)
     }
-
-    
 }

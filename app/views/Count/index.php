@@ -1,6 +1,6 @@
 <?php
-require('app/models/Counter.php');
+    require('app/models/Counter.php');
 
-$cou = new Counter;
+    $cou = new Counter;
 
-echo("$cou");
+    echo("$cou");

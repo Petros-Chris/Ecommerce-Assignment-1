@@ -1,7 +1,7 @@
 <html>
     <div id="counterDiv">
     <?php
-    require('app/models/Counter.php');
+        require('app/models/Counter.php');
 
 Class CounterController {
 
